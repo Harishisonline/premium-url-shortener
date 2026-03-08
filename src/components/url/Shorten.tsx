@@ -234,9 +234,10 @@ export const Shorten: React.FC = () => {
                   className="bg-transparent border-none focus:ring-0 text-purple-300 font-mono text-lg flex-1 truncate select-all outline-none"
                 />
                 <Button 
+                  type="button"
                   onClick={copyToClipboard}
                   variant="ghost" 
-                  className="hover:bg-white/10 text-white/80 hover:text-white transition-colors h-12 w-12 p-0 rounded-xl"
+                  className="hover:bg-white/10 text-white/80 hover:text-white transition-colors h-12 w-12 p-0 rounded-xl relative z-10"
                 >
                   {copied ? <CheckCircle className="text-green-500" /> : <Copy />}
                 </Button>
